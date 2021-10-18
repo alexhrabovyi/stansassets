@@ -27,7 +27,7 @@
         }
     
         &_1 {
-            background: url('../../../../img/home-index/slider_1_bg.png') center bottom no-repeat;
+            background: url('../../../img/home-index/slider_1_bg.png') center bottom no-repeat;
             background-size: cover;
 
             @include media-l {
@@ -40,7 +40,7 @@
         }
 
         &_2 {
-            background: url('../../../../img/home-index/slider_2_bg.png') center bottom no-repeat;
+            background: url('../../../img/home-index/slider_2_bg.png') center bottom no-repeat;
             background-size: cover;
 
             @include media-l {
@@ -57,7 +57,7 @@
         }
 
         &_3 {
-            background: url('../../../../img/home-index/slider_3_bg.png') center bottom no-repeat;
+            background: url('../../../img/home-index/slider_3_bg.png') center bottom no-repeat;
             background-size: cover;
             padding-top: 227px;
 
@@ -182,16 +182,16 @@
     &__mobile-slide {
 
         &_1 {
-            @include background-cover(url("../../../../img/home-index/mobile_slider_1_bg.png"));
+            @include background-cover(url("../../../img/home-index/mobile_slider_1_bg.png"));
         }
 
         &_2 {
-            @include background-cover(url("../../../../img/home-index/mobile_slider_2_bg.png"));
+            @include background-cover(url("../../../img/home-index/mobile_slider_2_bg.png"));
             background-position: bottom left;
         }
 
         &_3 {
-            @include background-cover(url("../../../../img/home-index/slider_3_bg.png"));
+            @include background-cover(url("../../../img/home-index/slider_3_bg.png"));
             background-position: bottom right;
         }
     }

@@ -5892,7 +5892,7 @@ template {
 .offer-wrapper__article {
   width: 100%;
   height: 760px;
-  background: url("../../../../common-blocks/offer/svg/offer_bg.svg") no-repeat;
+  background: url("../../../common-blocks/offer/svg/offer_bg.svg") no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6821,4 +6821,3 @@ template {
     width: 100%;
   }
 }
-/*# sourceMappingURL=style.css.map */

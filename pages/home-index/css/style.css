@@ -5070,7 +5070,7 @@ template {
   }
 }
 .header-wrapper__slide_1 {
-  background: url("../../../../img/home-index/slider_1_bg.png") center bottom no-repeat;
+  background: url("../../../img/home-index/slider_1_bg.png") center bottom no-repeat;
   background-size: cover;
 }
 @media (max-width: 1360px) {
@@ -5084,7 +5084,7 @@ template {
   }
 }
 .header-wrapper__slide_2 {
-  background: url("../../../../img/home-index/slider_2_bg.png") center bottom no-repeat;
+  background: url("../../../img/home-index/slider_2_bg.png") center bottom no-repeat;
   background-size: cover;
 }
 @media (max-width: 1360px) {
@@ -5103,7 +5103,7 @@ template {
   }
 }
 .header-wrapper__slide_3 {
-  background: url("../../../../img/home-index/slider_3_bg.png") center bottom no-repeat;
+  background: url("../../../img/home-index/slider_3_bg.png") center bottom no-repeat;
   background-size: cover;
   padding-top: 227px;
 }
@@ -5242,16 +5242,16 @@ template {
   z-index: -1;
 }
 .header-wrapper__mobile-slide_1 {
-  background: url("../../../../img/home-index/mobile_slider_1_bg.png") center center no-repeat;
+  background: url("../../../img/home-index/mobile_slider_1_bg.png") center center no-repeat;
   background-size: cover;
 }
 .header-wrapper__mobile-slide_2 {
-  background: url("../../../../img/home-index/mobile_slider_2_bg.png") center center no-repeat;
+  background: url("../../../img/home-index/mobile_slider_2_bg.png") center center no-repeat;
   background-size: cover;
   background-position: bottom left;
 }
 .header-wrapper__mobile-slide_3 {
-  background: url("../../../../img/home-index/slider_3_bg.png") center center no-repeat;
+  background: url("../../../img/home-index/slider_3_bg.png") center center no-repeat;
   background-size: cover;
   background-position: bottom right;
 }
@@ -5758,7 +5758,7 @@ template {
           transform: scale(1.07);
 }
 .achievements-wrapper__card_1 {
-  background: url("../../../../svg/home-index/achievements_1.svg") center center no-repeat, rgba(39, 110, 216, 0.05);
+  background: url("../../../svg/home-index/achievements_1.svg") center center no-repeat, rgba(39, 110, 216, 0.05);
 }
 @media (max-width: 1360px) {
   .achievements-wrapper__card_1 {
@@ -5772,10 +5772,10 @@ template {
   }
 }
 .achievements-wrapper__card_2 {
-  background: url("../../../../svg/home-index/achievements_2.svg") center center no-repeat, rgba(39, 110, 216, 0.05);
+  background: url("../../../svg/home-index/achievements_2.svg") center center no-repeat, rgba(39, 110, 216, 0.05);
 }
 .achievements-wrapper__card_3 {
-  background: url("../../../../svg/home-index/achievements_3.svg") center 20% no-repeat, rgba(39, 110, 216, 0.05);
+  background: url("../../../svg/home-index/achievements_3.svg") center 20% no-repeat, rgba(39, 110, 216, 0.05);
 }
 @media (max-width: 1360px) {
   .achievements-wrapper__card_3 {
@@ -5789,7 +5789,7 @@ template {
   }
 }
 .achievements-wrapper__card_4 {
-  background: url("../../../../svg/home-index/achievements_4.svg") center 20% no-repeat, rgba(39, 110, 216, 0.05);
+  background: url("../../../svg/home-index/achievements_4.svg") center 20% no-repeat, rgba(39, 110, 216, 0.05);
 }
 .achievements-wrapper__text_black {
   text-align: center;
@@ -6234,7 +6234,7 @@ template {
 .offer-wrapper__article {
   width: 100%;
   height: 760px;
-  background: url("../../../../common-blocks/offer/svg/offer_bg.svg") no-repeat;
+  background: url("../../../common-blocks/offer/svg/offer_bg.svg") no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
