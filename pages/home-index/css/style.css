@@ -5811,7 +5811,7 @@ template {
           flex-direction: column;
   padding-top: 227px;
   padding-bottom: 305px;
-  background: url("../../../../svg/home-index/partners_bg.svg") no-repeat;
+  background: url("../../../svg/home-index/partners_bg.svg") no-repeat;
 }
 @media (max-width: 1360px) {
   .partners-wrapper__article {

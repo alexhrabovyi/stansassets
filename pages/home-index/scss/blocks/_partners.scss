@@ -3,7 +3,7 @@
         @include flex-column-center-center;
         padding-top: 227px;
         padding-bottom: 305px;
-        background: url("../../../../svg/home-index/partners_bg.svg") no-repeat;
+        background: url("../../../svg/home-index/partners_bg.svg") no-repeat;
 
         @include media-l {
             background-size: cover;
