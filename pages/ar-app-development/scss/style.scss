@@ -1,0 +1,39 @@
+// libs
+
+@import "../../../libs/scss/swiper-bundle.min";
+@import "../../../libs/scss/animate";
+@import "../../../libs/scss/mixins";
+@import "../../../libs/scss/colors";
+@import "../../../libs/scss/fonts";
+@import "../../../libs/scss/normalize";
+
+// components
+
+@import "../../../common-blocks/text/text";
+@import "../../../common-blocks/other-components/other-components";
+
+// properties for all elements
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+// blocks
+
+// common blocks
+
+@import "../../../common-blocks/main-nav/main-nav";
+@import "../../../common-blocks/social-links-nav/social-links-nav";
+@import "../../../common-blocks/site-location/site-location";
+@import "../../../common-blocks/services-technologies-main/services-technologies";
+@import "../../../common-blocks/text-content/text-content";
+@import "../../../common-blocks/clutch-rating/clutch-rating";
+@import "../../../common-blocks/services-tiles/services-tiles";
+@import "../../../common-blocks/offer/offer";
+@import "../../../common-blocks/contact-us/contact-us";
+@import "../../../common-blocks/recent-projects/recent-projects";
+@import "../../../common-blocks/faq/faq";
+@import "../../../common-blocks/footer/footer";

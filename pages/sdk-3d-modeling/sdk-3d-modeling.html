@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDK 3D Modeling</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../favicon/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="main-nav container">
+        <a class="main-nav__logo-block" href="#" alt="stan’s assets">
+            <svg class="main-nav__logo" width="55" height="52" viewBox="0 0 55 52" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="elem-top-left svg-elem"
+                    d="M7.50372 21.5039L20.0037 0.00390625L24.5037 8.00391L17.0037 21.5039L23.5037 33.0039L18.5037 41.0039L7.50372 21.5039Z" />
+                <path class="elem-top-right svg-elem"
+                    d="M25.5037 10.0039L21.0037 18.0039L22.5037 20.0039H31.5037L25.5037 10.0039Z" />
+                <path class="elem-center-right svg-elem"
+                    d="M23.0037 29.5039L18.5037 21.5039H41.5037L54.0037 43.0039H45.0037L37.0037 29.5039H23.0037Z" />
+                <path class="elem-bottom-left svg-elem"
+                    d="M35.5037 31.0039H27.0037L19.5037 43.0039H4.50372L0.00372314 50.5039L24.5037 51.0039L35.5037 31.0039Z" />
+                <path class="elem-bottom-right svg-elem"
+                    d="M38.5037 35.0039H35.0037L30.5037 43.0039H43.0037L38.5037 35.0039Z" />
+                <path class="elem-center-left svg-elem"
+                    d="M16.0037 39.0039L11.5037 31.5039L5.00372 41.0039H14.5037L16.0037 39.0039Z" />
+            </svg>
+            <p class="main-nav__logo-text">stan’s assets</p>
+        </a>
+        <div class="main-nav__links-block">
+            <a class="main-nav__link main-nav__link_dropcontent" href="#" alt="Services" id="services-nav">
+                Services<i class="main-nav__icon icon-arrow-down"></i>
+            </a>
+            <a class="main-nav__link main-nav__link_dropcontent" href="#" alt="Technologies" id="technologies-nav">
+                Technologies<i class="main-nav__icon icon-arrow-down"></i>
+            </a>
+            <a class="main-nav__link" href="#" alt="Products">
+                Products
+            </a>
+            <a class="main-nav__link" href="#" alt="Portfolio">
+                Portfolio
+            </a>
+            <a class="main-nav__link" href="#" alt="Blog">
+                Blog
+            </a>
+            <a class="main-nav__link main-nav__link_dropcontent" href="#" alt="About Us" id="about-nav">
+                About Us<i class="main-nav__icon icon-arrow-down"></i>
+            </a>
+            <div class="main-nav__dropdown-content" id="content-services">
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Mobile Application Development">
+                    Mobile Application Development
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Game Development Outsourcing">
+                    Game Development Outsourcing
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="VR APP Development">
+                    VR APP Development
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Dedicated Developers">
+                    Dedicated Developers
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="SDK Development">
+                    SDK Development
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="3D Modeling Services">
+                    3D Modeling Services
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="AR APP Development">
+                    AR APP Development
+                </a>
+            </div>
+            <div class="main-nav__dropdown-content" id="content-technologies">
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Android">
+                    Android
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="IOS">
+                    IOS
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Unity">
+                    Unity
+                </a>
+            </div>
+            <div class="main-nav__dropdown-content" id="content-about">
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Contacts">
+                    Contacts
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Team">
+                    Team
+                </a>
+                <a class="main-nav__link main-nav__link_mb" href="#" alt="Join the Team">
+                    Join the Team
+                </a>
+            </div>
+        </div>
+        <button class="button button_white-blue main-nav__button_white-blue">Contact Us</button>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="mobile-nav__visible">
+            <a class="mobile-nav__logo-block" href="#" alt="stan’s assets">
+                <svg class="mobile-nav__logo" width="55" height="52" viewBox="0 0 55 52" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="elem-top-left svg-elem"
+                        d="M7.50372 21.5039L20.0037 0.00390625L24.5037 8.00391L17.0037 21.5039L23.5037 33.0039L18.5037 41.0039L7.50372 21.5039Z" />
+                    <path class="elem-top-right svg-elem"
+                        d="M25.5037 10.0039L21.0037 18.0039L22.5037 20.0039H31.5037L25.5037 10.0039Z" />
+                    <path class="elem-center-right svg-elem"
+                        d="M23.0037 29.5039L18.5037 21.5039H41.5037L54.0037 43.0039H45.0037L37.0037 29.5039H23.0037Z" />
+                    <path class="elem-bottom-left svg-elem"
+                        d="M35.5037 31.0039H27.0037L19.5037 43.0039H4.50372L0.00372314 50.5039L24.5037 51.0039L35.5037 31.0039Z" />
+                    <path class="elem-bottom-right svg-elem"
+                        d="M38.5037 35.0039H35.0037L30.5037 43.0039H43.0037L38.5037 35.0039Z" />
+                    <path class="elem-center-left svg-elem"
+                        d="M16.0037 39.0039L11.5037 31.5039L5.00372 41.0039H14.5037L16.0037 39.0039Z" />
+                </svg>
+                <p class="mobile-nav__logo-text">stan’s assets</p>
+            </a>
+            <button class="burger mobile-nav__burger"
+                onclick="this.classList.toggle('burger_opened');this.setAttribute('aria-expanded', this.classList.contains('burger_opened'))"
+                aria-label="Main Menu">
+                <svg width="70" height="60" viewBox="0 0 100 100">
+                    <path class="burger_line burger_line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="burger_line burger_line2" d="M 20,50 H 80" />
+                    <path class="burger_line burger_line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav__hidden">
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="Services">Services</a>
+                <a class="mobile-nav__link" href="#" alt="Mobile Application Development">
+                    Mobile Application Development
+                </a>
+                <a class="mobile-nav__link" href="#" alt="Game Development Outsourcing">
+                    Game Development Outsourcing
+                </a>
+                <a class="mobile-nav__link" href="#" alt="VR APP Development">
+                    VR APP Development
+                </a>
+                <a class="mobile-nav__link" href="#" alt="Dedicated Developers">
+                    Dedicated Developers
+                </a>
+                <a class="mobile-nav__link" href="#" alt="SDK Development">
+                    SDK Development
+                </a>
+                <a class="mobile-nav__link" href="#" alt="3D Modeling Services">
+                    3D Modeling Services
+                </a>
+                <a class="mobile-nav__link" href="#" alt="AR APP Development">
+                    AR APP Development
+                </a>
+            </div>
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="Technologies">Technologies</a>
+                <a class="mobile-nav__link" href="#" alt="Android">
+                    Android
+                </a>
+                <a class="mobile-nav__link" href="#" alt="IOS">
+                    IOS
+                </a>
+                <a class="mobile-nav__link" href="#" alt="Unity">
+                    Unity
+                </a>
+            </div>
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="Products">Products</a>
+            </div>
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="Portfolio">Portfolio</a>
+            </div>
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="Blog">Blog</a>
+            </div>
+            <div class="mobile-nav__links-block">
+                <a class="mobile-nav__link mobile-nav__link_bold" href="#" alt="About Us">About Us</a>
+                <a class="mobile-nav__link" href="#" alt="Contacts">
+                    Contacts
+                </a>
+                <a class="mobile-nav__link" href="#" alt="Team">
+                    Team
+                </a>
+                <a class="mobile-nav__link" href="#" alt="Join the team">
+                    Join the team
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="social-links-nav">
+        <a class="social-links-nav__link" href="#" alt="Facebook">
+            <i class="icon-facebook"></i>
+        </a>
+        <span class="social-links-nav__line"></span>
+        <a class="social-links-nav__link" href="#" alt="LinkedIn">
+            <i class="icon-linkedin"></i>
+        </a>
+        <span class="social-links-nav__line"></span>
+        <a class="social-links-nav__link" href="#" alt="What's Up">
+            <i class="icon-whats-up"></i>
+        </a>
+        <span class="social-links-nav__line"></span>
+        <a class="social-links-nav__link" href="#" alt="Skype">
+            <i class="icon-skype"></i>
+        </a>
+    </nav>
+    <section class="site-location container">
+        <a class="text text_blue site-location__text" href="../../index.html" alt="Home">Home</a>
+        <i class="site-location__icon icon-arrow-right"></i>
+        <a class="text text_blue site-location__text" href="#" alt="Services">Services</a>
+        <i class="site-location__icon icon-arrow-right"></i>
+        <a class="text text_blue site-location__text" href="#" alt="SDK 3D Modeling">SDK 3D Modeling</a>
+    </section>
+    <section class="services-technologies-main-wrapper">
+        <main class="services-technologies-main-wrapper__main container">
+            <h1 class="title title_blue services-technologies-main-wrapper__title">SDK 3D Modeling</h1>
+            <img class="services-technologies-main-wrapper__img" src="../../svg/sdk-3d-modeling/main.svg"
+                alt="SDK 3D Modeling">
+        </main>
+    </section>
+    <section class="text-content-wrapper" id="text-content-1">
+        <main class="text-content-wrapper__main container">
+            <div class="text-content-wrapper__block text-content-wrapper__block_1">
+                <p class="title-blue title-blue_small text-content-wrapper__title-blue">
+                    Header 1
+                </p>
+                <p class="text text_black text-content-wrapper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim
+                    non lectus convallis feugiat.<br><br>
+                    Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut, suscipit sit amet sapien. Sed ut
+                    pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique gravida.
+                </p>
+            </div>
+            <div class="text-content-wrapper__block">
+                <p class="title-blue title-blue_small text-content-wrapper__title-blue">
+                    Header 2
+                </p>
+                <p class="text text_black text-content-wrapper__text">
+                    Fusce consectetur vel urna ut venenatis. Etiam in mauris odio. Phasellus sed turpis vitae justo
+                    maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus quis.<br><br>
+                    Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis sem cursus
+                    feugiat sed nec erat. Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a
+                    lorem quis sem cursus feugiat sed nec erat.
+                </p>
+            </div>
+        </main>
+    </section>
+    <section class="rating-wrapper container">
+        <article class="rating-wrapper__article wow fadeIn">
+            <img class="rating-wrapper__logo" src="../../common-blocks/clutch-rating/img/clutch_logo.png" alt="Clutch">
+            <div class="rating-wrapper__rating-block">
+                <p class="rating-wrapper__value">4.0</p>
+                <div class="rating-wrapper__stars-block">
+                    <i class="icon-star rating-wrapper__icon-active"></i>
+                    <i class="icon-star rating-wrapper__icon-active"></i>
+                    <i class="icon-star rating-wrapper__icon-active"></i>
+                    <i class="icon-star rating-wrapper__icon-active"></i>
+                    <i class="icon-star rating-wrapper__icon-inactive"></i>
+                </div>
+                <p class="rating-wrapper__reviews">2 reviews </p>
+            </div>
+            <button class="button button_large rating-wrapper__button">Check out reviews</button>
+        </article>
+    </section>
+    <section class="services-tiles-wrapper">
+        <nav class="services-tiles-wrapper__nav container">
+            <h3 class="title-blue services-tiles-wrapper__title-blue">Services</h3>
+            <div class="services-tiles-wrapper__content">
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#"
+                    alt="Mobile Application Development">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_1.svg">
+                    <p class="services-tiles-wrapper__text">Mobile Application Development</p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="Game Development Outsourcing">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_2.svg">
+                    <p class="services-tiles-wrapper__text">Game Development Outsourcing</p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="VR APP Development">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_3.svg">
+                    <p class="services-tiles-wrapper__text">VR APP Development</p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="Dedicated Developers">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_4.svg">
+                    <p class="services-tiles-wrapper__text">Dedicated Developers</p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="SDK Development">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_5.svg">
+                    <p class="services-tiles-wrapper__text">SDK Development</p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="SDK 3D Modeling">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_6.svg">
+                    <p class="services-tiles-wrapper__text">SDK 3D Modeling </p>
+                </a>
+                <a class="services-tiles-wrapper__link-button wow fadeInUp" href="#" alt="AR APP Development">
+                    <img class="services-tiles-wrapper__img" src="../../common-blocks/services-tiles/svg/img_7.svg">
+                    <p class="services-tiles-wrapper__text">AR APP Development</p>
+                </a>
+            </div>
+        </nav>
+    </section>
+    <section class="offer-wrapper">
+        <article class="offer-wrapper__article container wow fadeIn">
+            <p class="title offer-wrapper__title">
+                Looking for a partner in building a solution?
+            </p>
+            <p class="text text_bigger text_bigger_white offer-wrapper__text_bigger_white">
+                We are ready to discuss your project requirements
+            </p>
+            <button class="button offer-wrapper__button">Let’s talk</button>
+        </article>
+    </section>
+    <section class="text-content-wrapper" id="text-content-2">
+        <main class="text-content-wrapper__main container">
+            <div class="text-content-wrapper__block text-content-wrapper__block_1 wow fadeInLeft">
+                <p class="title-blue title-blue_small text-content-wrapper__title-blue">
+                    Header 1
+                </p>
+                <p class="text text_black text-content-wrapper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim
+                    non lectus convallis feugiat.<br><br>
+                    Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut, suscipit sit amet sapien. Sed ut
+                    pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique gravida.
+                </p>
+            </div>
+            <div class="text-content-wrapper__block wow fadeInRight">
+                <p class="title-blue title-blue_small text-content-wrapper__title-blue">
+                    Header 2
+                </p>
+                <p class="text text_black text-content-wrapper__text">
+                    Fusce consectetur vel urna ut venenatis. Etiam in mauris odio. Phasellus sed turpis vitae justo
+                    maximus suscipit in ut risus. Quisque viverra magna lorem, et placerat velit cursus quis.<br><br>
+                    Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a lorem quis sem cursus
+                    feugiat sed nec erat. Maecenas venenatis molestie eros, in pulvinar urna elementum quis. Praesent a
+                    lorem quis sem cursus feugiat sed nec erat.
+                </p>
+            </div>
+        </main>
+    </section>
+    <section class="contact-us-wrapper">
+        <article class="contact-us-wrapper__article container">
+            <p class="title-blue contact-us-wrapper__title-blue wow fadeInLeft">Contacts</p>
+            <p class="subtitle-black contact-us-wrapper__subtitle-black wow fadeInRight">
+                We are open for dialog and you are welcome to share your opinions or thoughts with us
+            </p>
+            <p class="text text_black contact-us-wrapper__text_black wow fadeInLeft">
+                Hit us up any time through email with any idea and help us turn your great ideas into brilliant
+                projects
+            </p>
+            <div class="contact-us-wrapper__content">
+                <div class="contact-us-wrapper__info-block wow fadeInLeft">
+                    <div class="contact-us-wrapper__icons-block">
+                        <i class="icon-tag"></i>
+                        <i class="icon-phone"></i>
+                        <i class="icon-whats-up"></i>
+                        <i class="icon-skype"></i>
+                        <i class="icon-mail"></i>
+                        <i class="icon-facebook"></i>
+                    </div>
+                    <div class="contact-us-wrapper__text-block">
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text" href="#" type="address">
+                            Ukraine, Kyiv, Rodyny Kristeriv 20B, office 188
+                        </a>
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text" href="#" type="tel">
+                            +38 (093) 345 56 76
+                        </a>
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text" href="#" type="tel">
+                            +38 (093) 345 56 77
+                        </a>
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text" href="#">
+                            Stanassets
+                        </a>
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text" href="#" type="email">
+                            stanAssets@gmail.com
+                        </a>
+                        <a class="text text_black text_fz-20 contact-us-wrapper__text"
+                            href="https://facebook.com/Stanassets" target="_blank">
+                            Facebook.com/Stanassets
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-us-wrapper__form-block wow fadeInRight">
+                    <form class="contact-us-wrapper__form" action="#">
+                        <input class="contact-us-wrapper__input" type="text" required placeholder="Name">
+                        <input class="contact-us-wrapper__input" type="text" required placeholder="Email">
+                        <textarea class="contact-us-wrapper__textarea" required placeholder="Message"></textarea>
+                        <button class="button button_form contact-us-wrapper__button_form">Send request</button>
+                    </form>
+                    <img class="contact-us-wrapper__bg-img-1" src="../../common-blocks/contact-us/svg/message.svg">
+                    <img class="contact-us-wrapper__bg-img-2" src="../../common-blocks/contact-us/svg/phone.svg">
+                    <img class="contact-us-wrapper__bg-img-3" src="../../common-blocks/contact-us/svg/mail.svg">
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="recent-projects-wrapper">
+        <article class="recent-projects-wrapper__article wow fadeInUp">
+            <p class="title-blue recent-projects-wrapper__title-blue">Recent Projects</p>
+            <div class="recent-projects-wrapper__slider-container">
+                <div class="recent-projects-wrapper__slider-wrapper swiper-wrapper">
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Ori and the Will of the Wisps">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_1_img.png"
+                            alt="Ori and the Will of the Wisps">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Ori and the Will of the Wisps
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Tin Hearts">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_2_img.png" alt="Tin Hearts">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Tin Hearts
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Stickman Trials">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_3_img.png" alt="Stickman Trials">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Stickman Trials
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Ori and the Will of the Wisps">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_1_img.png"
+                            alt="Ori and the Will of the Wisps">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Ori and the Will of the Wisps
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Tin Hearts">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_2_img.png" alt="Tin Hearts">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Tin Hearts
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                    <a class="recent-projects-wrapper__slide swiper-slide" href="#" alt="Stickman Trials">
+                        <img class="recent-projects-wrapper__img"
+                            src="../../common-blocks/recent-projects/img/slide_3_img.png" alt="Stickman Trials">
+                        <p class="title-blue title-blue_small recent-projects-wrapper__title">
+                            Stickman Trials
+                        </p>
+                        <p class="text text_black recent-projects-wrapper__text">
+                            This plugin provides easy and flexible functionality of iOS native functions which are not
+                            natively available from Unity.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <button class="recent-projects-wrapper__button recent-projects-wrapper__button_left">
+                <i class="icon-arrow-left"></i>
+            </button>
+            <button class="recent-projects-wrapper__button recent-projects-wrapper__button_right">
+                <i class="icon-arrow-right"></i>
+            </button>
+        </article>
+    </section>
+    <section class="faq-wrapper">
+        <article class="faq-wrapper__article container">
+            <p class="title-blue faq-wrapper__title">FAQ’s</p>
+            <div class="faq-wrapper__table-of-content wow fadeInRight">
+                <img class="faq-wrapper__border-img" src="../../common-blocks/faq/svg/border_left.svg">
+                <div class="faq-wrapper__links">
+                    <p class="faq-wrapper__text-blue faq-accord-button-1">
+                        <span class="faq-wrapper__circle"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ?
+                    </p>
+                    <p class="faq-wrapper__text-blue faq-accord-button-2">
+                        <span class="faq-wrapper__circle"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </p>
+                    <p class="faq-wrapper__text-blue faq-accord-button-3">
+                        <span class="faq-wrapper__circle"></span>
+                        Lorem ipsum dolor sit amet?
+                    </p>
+                    <p class="faq-wrapper__text-blue faq-accord-button-4">
+                        <span class="faq-wrapper__circle"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ?
+                    </p>
+                    <p class="faq-wrapper__text-blue faq-accord-button-5">
+                        <span class="faq-wrapper__circle"></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing ?
+                    </p>
+                </div>
+                <img class="faq-wrapper__border-img" src="../../common-blocks/faq/svg/border_right.svg">
+            </div>
+            <button class="faq-wrapper__button faq-accord-button-1 wow fadeInLeft">
+                <i class="faq-wrapper__icon icon-arrow-top faq-accord-icon-1"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ?
+            </button>
+            <div class="faq-wrapper__hidden-content faq-accord-content-1" style="max-height: 0;">
+                <p class="faq-wrapper__text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim
+                    non lectus convallis feugiat.
+                </p>
+            </div>
+            <span class="faq-wrapper__grey-line"></span>
+            <button class="faq-wrapper__button faq-accord-button-2  wow fadeInLeft">
+                <i class="faq-wrapper__icon icon-arrow-top faq-accord-icon-2"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+            </button>
+            <div class="faq-wrapper__hidden-content faq-accord-content-2" style="max-height: 0;">
+                <p class="faq-wrapper__text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est.
+                </p>
+            </div>
+            <span class="faq-wrapper__grey-line"></span>
+            <button class="faq-wrapper__button faq-accord-button-3  wow fadeInLeft">
+                <i class="faq-wrapper__icon icon-arrow-top faq-accord-icon-3"></i>
+                Lorem ipsum dolor sit amet?
+            </button>
+            <div class="faq-wrapper__hidden-content faq-accord-content-3" style="max-height: 0;">
+                <p class="faq-wrapper__text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim
+                    non lectus convallis feugiat.
+                </p>
+            </div>
+            <span class="faq-wrapper__grey-line"></span>
+            <button class="faq-wrapper__button faq-accord-button-4  wow fadeInLeft">
+                <i class="faq-wrapper__icon icon-arrow-top faq-accord-icon-4"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ?
+            </button>
+            <div class="faq-wrapper__hidden-content faq-accord-content-4" style="max-height: 0;">
+                <p class="faq-wrapper__text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est.
+                </p>
+            </div>
+            <span class="faq-wrapper__grey-line"></span>
+            <button class="faq-wrapper__button faq-accord-button-5  wow fadeInLeft">
+                <i class="faq-wrapper__icon icon-arrow-top faq-accord-icon-5"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing ?
+            </button>
+            <div class="faq-wrapper__hidden-content faq-accord-content-5" style="max-height: 0;">
+                <p class="faq-wrapper__text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel
+                    cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus
+                    rutrum, libero augue venenatis leo, in maximus ipsum dui et est.
+                </p>
+            </div>
+            <span class="faq-wrapper__grey-line"></span>
+        </article>
+    </section>
+    <section class="footer-wrapper">
+        <nav class="footer-wrapper__nav wow fadeInUp">
+            <div class="footer-wrapper__content container">
+                <div class="footer-wrapper__social-links-block">
+                    <a class="footer-wrapper__logo-block" href="#" alt="stan’s assets">
+                        <svg class="footer-wrapper__logo" width="55" height="52" viewBox="0 0 55 52" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.50372 21.5039L20.0037 0.00390625L24.5037 8.00391L17.0037 21.5039L23.5037 33.0039L18.5037 41.0039L7.50372 21.5039Z" />
+                            <path d="M25.5037 10.0039L21.0037 18.0039L22.5037 20.0039H31.5037L25.5037 10.0039Z" />
+                            <path
+                                d="M23.0037 29.5039L18.5037 21.5039H41.5037L54.0037 43.0039H45.0037L37.0037 29.5039H23.0037Z" />
+                            <path
+                                d="M35.5037 31.0039H27.0037L19.5037 43.0039H4.50372L0.00372314 50.5039L24.5037 51.0039L35.5037 31.0039Z" />
+                            <path d="M38.5037 35.0039H35.0037L30.5037 43.0039H43.0037L38.5037 35.0039Z" />
+                            <path d="M16.0037 39.0039L11.5037 31.5039L5.00372 41.0039H14.5037L16.0037 39.0039Z" />
+                        </svg>
+                        <p class="footer-wrapper__logo-text">
+                            stan’s assets
+                        </p>
+                    </a>
+                    <div class="footer-wrapper__social-links">
+                        <a class="footer-wrapper__social-link" href="#" alt="Facebook">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a class="footer-wrapper__social-link" href="#" alt="LinkedIn">
+                            <i class="icon-linkedin"></i>
+                        </a>
+                        <a class="footer-wrapper__social-link" href="#" alt="What's up">
+                            <i class="icon-whats-up"></i>
+                        </a>
+                        <a class="footer-wrapper__social-link" href="#" alt="Skype">
+                            <i class="icon-skype"></i>
+                        </a>
+                        <a class="footer-wrapper__social-link" href="#" alt="GitHub">
+                            <i class="icon-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-wrapper__links-block">
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="Services">Services</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Mobile Application Development">Mobile
+                        Application Development</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Game Development Outsourcing">Game
+                        Development
+                        Outsourcing</a>
+                    <a class="text footer-wrapper__text" href="#" alt="VR App Development">VR App Development</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Dedicated Developers">Dedicated
+                        Developers</a>
+                    <a class="text footer-wrapper__text" href="#" alt="SDK Development">SDK Development</a>
+                    <a class="text footer-wrapper__text" href="#" alt="3D Modeling services">3D Modeling
+                        services</a>
+                </div>
+                <div class="footer-wrapper__links-block">
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="Technologies">Technologies</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Android">Android</a>
+                    <a class="text footer-wrapper__text" href="#" alt="IOS">IOS</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Unity">Unity</a>
+                </div>
+                <div class="footer-wrapper__links-block">
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="Products">Products</a>
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="Portfolio">Portfolio</a>
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="Blog">Blog</a>
+                </div>
+                <div class="footer-wrapper__links-block">
+                    <a class="link-bold footer-wrapper__link-bold" href="#" alt="About us">About us</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Contacts">Contacts</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Team">Team</a>
+                    <a class="text footer-wrapper__text" href="#" alt="Join the Team">Join the Team</a>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer-wrapper__footer container">
+            <p class="footer-wrapper__footer-text">© 2021 - Stan’s Assets. All Right Reserved</p>
+            <div class="footer-wrapper__policy-block">
+                <a class="footer-wrapper__footer-text footer-wrapper__footer-text_link" href="#"
+                    alt="Privacy policy">Privacy policy</a>
+                <a class="footer-wrapper__footer-text footer-wrapper__footer-text_link" href="#"
+                    alt="Cookies policy">Cookies policy</a>
+            </div>
+        </footer>
+    </section>
+    <script src="../../libs/js/swiper-bundle.min.js"></script>
+    <script src="../../libs/js/wow.min.js"></script>
+    <script src="../../libs/js/animations.js"></script>
+    <script src="js/logo-colors.js"></script>
+    <script src="../../common-blocks/main-nav/js/link-hover.js"></script>
+    <script src="../../common-blocks/main-nav/js/mobile-nav.js"></script>
+    <script src="../../common-blocks/social-links-nav/js/scroll-hide.js"></script>
+    <script src="../../common-blocks/recent-projects/js/_projects-slider.js"></script>
+    <script src="../../common-blocks/faq/js/faq-accrodion.js"></script>
+</body>
+
+</html>

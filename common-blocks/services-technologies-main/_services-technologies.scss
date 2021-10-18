@@ -1,0 +1,27 @@
+.services-technologies-main-wrapper {
+    &__main {
+        width: 100%;
+        @include flex-builder(row, space-between, center);
+
+        @include media-m {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include media-s {
+            margin-top: 90px;
+        }
+    }
+
+    &__title {
+        @include media-s {
+            text-align: center;
+        }
+    }
+
+    &__img {
+        @include media-xs {
+            width: 100%;
+        }
+    }
+}

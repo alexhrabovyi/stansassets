@@ -1,0 +1,28 @@
+.site-location {
+    @include flex-builder(row, none, center);
+    margin-top: 90px;
+    margin-bottom: 40px;
+
+    @include media-l {
+        margin-top: 152px;
+    }
+
+    @include media-s {
+        display: none;
+    }
+
+    &__text {
+        text-decoration: none;
+        margin-right: 6px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__icon {
+        margin-right: 6px;
+        color: $blue;
+        font-size: 12px;
+    }
+}

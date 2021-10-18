@@ -1,0 +1,131 @@
+.partners-wrapper {
+    &__article {
+        @include flex-column-center-center;
+        padding-top: 227px;
+        padding-bottom: 305px;
+        background: url("../../../../svg/home-index/partners_bg.svg") no-repeat;
+
+        @include media-l {
+            background-size: cover;
+        }
+    }
+
+    &__title-blue {
+        margin-bottom: 80px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 40px 24px;
+
+        @include media-l {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-m {
+            gap: 30px 18px;
+        }
+
+        @include media-s {
+            display: none;
+        }
+    }
+
+    &__tile {
+        padding: 0 34px;
+        height: 160px;
+        background: $white;
+        border-radius: 16px;
+        box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+        @include flex-center-center;
+        transition: all .15s ease-in-out;
+
+        @include media-m {
+            width: 240px;
+            height: 130px;
+        }
+
+        &_16 {
+            @include media-l {
+                grid-column: 2/3;
+            }
+        }
+
+        @include media-xs {
+            width: 146px;
+            height: auto;
+            padding: 10px 34px;
+        }
+
+        &:hover {
+            box-shadow: 0px 3px 24px 6px rgba(29, 51, 107, 0.25);
+        }
+
+        &:hover > .partners-wrapper__img {
+            opacity: 1;
+        }
+    }
+    
+    &__img {
+        opacity: 0.4;
+        transition: all .15s ease-in-out;
+
+        @include media-xs {
+            width: 100%;
+        }
+    }
+
+    &__mobile-content {
+        display: none;
+
+        @include media-s {
+            @include flex-builder(column, center, center);
+        }
+    }
+
+    &__visible-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px 28px;
+        margin-bottom: 16px;
+    }
+
+    &__hidden-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px 28px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    &__button {
+        @include flex-center-center;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $blue;
+        margin-top: 10px;
+    }
+
+    &__button-text {
+        font-family: "Montserrat", sans-serif;
+        transition: all .5s ease-in-out;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__button-icon {
+        font-size: 14px;
+        margin-left: 10px;
+        transition: all .5s ease-in-out;
+    }
+}
+
+.icon-transform {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,48 @@
+.services-tiles-wrapper {
+    &__nav {
+        @include flex-builder(column,none, center);
+        margin-top: 190px;
+        margin-bottom: 50px;
+    }
+
+    &__title-blue {
+        margin-bottom: 70px;
+    }
+
+    &__content {
+        @include flex-builder(row, center, none);
+        flex-wrap: wrap;
+    }
+
+    &__link-button {
+        display: block;
+        width: 322px;
+        height: 320px;
+        box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+        border-radius: 16px;
+        background: rgb(244, 248, 253);
+        text-decoration: none;
+        @include flex-builder(column, center, center);
+        transition: all .1s ease-in-out;
+        margin: 0px 7px 60px 7px;
+
+        &:hover {
+            background: $white;
+            box-shadow: 0px 3px 20px 6px rgba(29, 51, 107, 0.15);
+        }
+    }
+
+    &__img {
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-family: "Harabara", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $medium-blue;
+    }
+}

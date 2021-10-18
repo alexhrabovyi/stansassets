@@ -1,0 +1,77 @@
+.rating-wrapper {
+    @include flex-center;
+
+    &__article {
+        width: 898px;
+        height: 138px;
+        border-radius: 16px;
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+        @include flex-builder(row, space-between, center);
+        padding: 0 33px;
+
+        @include media-s {
+            @include flex-builder(column, none, center);
+            width: auto;
+            height: auto;
+            padding: 30px 15px 53px 15px;
+        }
+    }
+
+    &__logo {
+        @include media-m {
+            margin-right: 10px;
+        }
+
+        @include media-s {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__rating-block {
+        @include flex-center-center;
+
+        @include media-s {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__value {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: $dark-grey;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+
+    &__reviews {
+        font-family: "Montserrat", sans-serif;
+        color: $dark-grey;
+        margin-left: 13px;
+    }
+
+    &__stars-block {
+        width: 160px;
+        @include flex-builder(row, space-between, none);
+        font-size: 24px;
+    }
+
+    &__icon-active {
+        color: $green;
+    }
+
+    &__icon-inactive {
+        color: $grey;
+    }
+
+    &__button {
+        @include media-m {
+            margin-left: 10px;
+        }
+
+        @include media-s {
+            margin-left: 0;
+        }
+    }
+}

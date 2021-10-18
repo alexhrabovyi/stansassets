@@ -1,0 +1,115 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;700&display=swap');
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// local fonts
+
+@font-face {
+    font-family: "Harabara";
+    src: url('../../../fonts/Harabara.ttf');
+}
+
+// icon font
+
+@font-face {
+    font-family: 'icon-font';
+    src:  url('../../../fonts/icon-font/icon-font.eot?ysikde');
+    src:  url('../../../fonts/icon-font/icon-font.eot?ysikde#iefix') format('embedded-opentype'),
+        url('../../../fonts/icon-font/icon-font.ttf?ysikde') format('truetype'),
+        url('../../../fonts/icon-font/icon-font.woff?ysikde') format('woff'),
+        url('../../../fonts/icon-font/icon-font.svg?ysikde#icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+i {
+    font-family: 'icon-font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-android:before {
+    content: "\e900";
+}
+
+.icon-apple:before {
+    content: "\e901";
+}
+
+.icon-arrow-down:before {
+    content: "\e902";
+}
+
+.icon-arrow-left:before {
+    content: "\e903";
+}
+
+.icon-arrow-right:before {
+    content: "\e904";
+}
+
+.icon-arrow-top:before {
+    content: "\e905";
+}
+
+.icon-clock:before {
+    content: "\e906";
+}
+
+.icon-eye:before {
+    content: "\e907";
+}
+
+.icon-facebook:before {
+    content: "\e908";
+}
+
+.icon-github:before {
+    content: "\e909";
+}
+
+.icon-linkedin:before {
+    content: "\e90a";
+}
+
+.icon-mail:before {
+    content: "\e90b";
+}
+
+.icon-phone:before {
+    content: "\e90c";
+}
+
+.icon-share:before {
+    content: "\e90d";
+}
+
+.icon-skype:before {
+    content: "\e90e";
+}
+
+.icon-star:before {
+    content: "\e90f";
+}
+
+.icon-tag:before {
+    content: "\e910";
+}
+
+.icon-unity:before {
+    content: "\e911";
+}
+
+.icon-whats-up:before {
+    content: "\e912";
+}
+  

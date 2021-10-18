@@ -1,0 +1,73 @@
+.container {
+    padding-left: 14.58%;
+    padding-right: 14.58%;
+
+    @include media-original {
+        padding-left: 7.81%;
+        padding-right: 7.81%;
+    }
+
+    @include media-s {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.button {
+    width: 160px;
+    height: 42px;
+    background: $green;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: $white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $green;
+        background: $white;
+        color: $green;
+    }
+
+    &:active {
+        border-color: $green-active;
+        background: $white-active;
+        color: $green-active;
+    }
+}
+
+.button_white {
+    background: transparent;
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+        background: $white;
+        border-color: $white;
+        color: $green;
+    }
+
+    &:active {
+        background: $white-active;
+        border-color: $white-active;
+        color: $green-active;
+    }
+}
+
+.button_large {
+    width: 220px;
+}
+
+.button_form {
+    width: 100%;
+    background: $dark-green;
+
+    &:hover {
+        border-color: $dark-green;
+        color: $dark-green;
+    }
+}

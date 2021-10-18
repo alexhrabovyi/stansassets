@@ -1,0 +1,124 @@
+.title {
+    font-family: "Harabara", sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $white;
+    line-height: 60px;
+
+    @include media-m {
+        font-size: 40px;
+    }
+
+    @include media-s {
+        font-size: 36px;
+    }
+
+    @include media-xs {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.title_blue {
+    color: $blue;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+}
+
+.text_bigger {
+    font-size: 24px;
+    color: $dark-grey;
+    text-align: center;
+    line-height: 38px;
+}
+
+.text_strong {
+    font-weight: bold;
+}
+
+.text_blue {
+    color: $navy-blue;
+}
+
+.text_black {
+    color: $dark-grey;
+}
+
+.text_bigger_white {
+    color: $white;
+
+    @include media-s {
+        font-size: 22px;
+    }
+
+    @include media-xs {
+        font-size: 18px;
+    }
+}
+
+.text_fz-20 {
+    font-size: 20px;
+}
+
+.subtitle {
+    font-family: "Harabara", sans-serif;
+    font-weight: bold;
+    font-size: 29px;
+    color: $light-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &_green {
+        color: $light-green;
+    }
+}
+
+.title-blue {
+    font-family: "Harabara", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $blue;
+}
+
+.title-blue_small {
+    font-size: 24px;
+    color: $medium-blue;
+}
+
+.blue-text {
+    color: $sky-blue;
+    font-weight: bold;
+}
+
+.dark-blue-text {
+    color: $blue;
+    font-weight: bold;
+}
+
+.link-bold {
+    font-family: "Harabara", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.subtitle-black {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: $dark-grey;
+    line-height: 38px;
+}

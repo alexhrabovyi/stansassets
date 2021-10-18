@@ -1,0 +1,112 @@
+.faq-wrapper {
+    &__article {
+        @include flex-builder(column, none, center);
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__table-of-content {
+        width: 1016px;
+        @include flex-builder(row, space-between, none);
+        margin-bottom: 68px;
+
+        @include media-m {
+            width: 100%;
+        }
+    }
+
+    &__links {
+        @include flex-builder(column, space-between, none);
+
+        @include media-m {
+            margin: 0 20px;
+        }
+
+        @include media-s {
+            margin: 0 7px;
+        }
+    }
+
+    &__text-blue {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: $medium-blue;
+        transition: all .05s ease-in-out;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &:hover .faq-wrapper__circle{
+            background: $blue;
+        }
+    }
+
+    &__circle {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $medium-blue;
+        transition: all .05s ease-in-out;
+    }
+
+    &__button {
+        width: 823px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: $dark-grey;
+        display: flex;
+        margin-bottom: 14px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        @include media-m {
+            width: 100%;
+        }
+    }
+
+    &__icon {
+        padding-top: 3px;
+        font-size: 16px;
+        margin-right: 7px;
+        transition: all .5s ease-in-out;
+    }
+
+    &__hidden-content {
+        width: 823px;
+        font-family: "Montserra", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: $dark-grey;
+        padding-left: 25px;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+
+        @include media-m {
+            width: 100%;
+        }
+    }
+
+    &__grey-line {
+        width: 823px;
+        height: 2px;
+        background: rgba(13, 110, 183, 1);
+        opacity: 0.5;
+        margin-top: 16px;
+        margin-bottom: 18px;
+
+        @include media-m {
+            width: 100%;
+        }
+    }
+}
+
+.icon-transform {
+    transform: rotate(180deg);
+}

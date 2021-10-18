@@ -1,0 +1,42 @@
+.text-content-wrapper {
+    &__main {
+        width: 100%;
+        @include flex-builder(row, space-between, none);
+        margin-bottom: 86px;
+
+        @include media-s {
+            @include flex-builder(column, none, center);
+        }
+    }
+
+    &__block {
+        width: 553px;
+
+        @include media-l {
+            width: 500px;
+        }
+
+        @include media-s {
+            width: 100%;
+        }
+
+        &_1 {
+            @include media-l {
+                margin-right: 30px;
+            }
+
+            @include media-s {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__title-blue {
+        margin-bottom: 16px;
+
+        @include media-s {
+            text-align: center;
+        }
+    }
+}
